@@ -11,10 +11,10 @@ conservatory = Room("Conservatory")
 
 print ("There are " + str(Room.number_of_rooms) + " rooms to explore.")
 
-kitchen.set_description("A dank and dirty room buzzing with flies")
-ballroom.set_description("An echoing, dusty space adorned with faded curtains")
-dining_hall.set_description("A dark-panelled room lit by a crackling log fire")
-conservatory.set_description("A misty and mildewed place, overgrown with creepers.")
+kitchen.set_description("A dank and dirty basement kitchen, there is something half-eaten on the table that buzzes with flies when you approach.")
+ballroom.set_description("An echoing, dusty space adorned with faded and torn curtains. A large ornate mirror is hung on the far wall.")
+dining_hall.set_description("A dark-panelled room with comfortable chairs arranged around a hearth where a log fire crackles.")
+conservatory.set_description("Lush vegetation and warm, humid air engulf you. Water gently drips out of sight.")
 
 kitchen.link_room(dining_hall, "south")
 dining_hall.link_room(kitchen, "north")
@@ -28,7 +28,7 @@ dave.set_conversation("Eurghrrh...flesshh")
 dave.set_weakness("cheese")
 
 brad = Enemy("Brad","A bloodthirsty vampire!")
-brad.set_conversation("Listen to them, the children of the night. What sweet music they make!")
+brad.set_conversation("Listen to them, the children of the night. What music they make!")
 brad.set_weakness("garlic")
 
 mildred = Friend("Mildred","A lazy ghost!")
